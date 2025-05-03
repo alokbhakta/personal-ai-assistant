@@ -83,10 +83,10 @@ function ChatUi() {
     }
 
   return (
-    <div className='mt-20 p-6 relative h-[88vh]'>
+    <div className='mt-10 p-6 relative h-[90vh]'>
         {messages?.length == 0 && <EmptyChatState/>}
 
-        <div ref={chatRef} className='h-[75vh] overflow-scroll scrollbar-hide overflow-x-hidden'>
+        <div ref={chatRef} className='h-[78vh] overflow-scroll scrollbar-hide overflow-x-hidden'>
           {messages.map((msg,index)=>(
             <div key={index}
              className={`flex mb-2 ${msg.role=='user'?'justify-end':'justify-start'}`}
