@@ -89,19 +89,7 @@ function Profile({openDialog, setOpenDialog} : any) {
         rzp.open()
     }
 
-    // const cancelSubscription = async () => {
-    //   try {
-    //     const result = await axios.post("/api/cancel-subscription", {
-    //       subId: user?.orderId,
-    //     });
-    //     console.log(result.data);
-    //     toast.success('Subscription Canceled');
-    //     window.location.reload(); // ✅ reload to reflect new plan
-    //   } catch (error) {
-    //     console.error("Error canceling subscription", error);
-    //     toast.error("Failed to cancel subscription.");
-    //   }
-    // };
+    
     
 
   return (
