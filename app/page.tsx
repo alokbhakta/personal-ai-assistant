@@ -12,7 +12,7 @@ export default function Home() {
   };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-sky-200">
-    <h1 className="text-3xl font-bold mb-8">AI-Powered Personal Assistant</h1>
+    <h1 className="text-2xl font-bold mb-8">AI-Powered Personal Assistant</h1>
     <Button
       onClick={handleStart}
       className="text-lg px-6 py-3 rounded-xl shadow-lg hover:scale-[1.12]"

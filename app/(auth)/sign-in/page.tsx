@@ -40,7 +40,7 @@ function SignIn() {
     <div className="flex items-center flex-col justify-center h-screen">
       <div className="flex flex-col items-center gap-5 border rounded-2xl p-10 shadow-md">
         <Image src="/logo.svg" alt="logo" width={50} height={50} />
-        <h2 className="text-2xl">Sign In To AI Personal Assistant</h2>
+        <h2 className="text-xl font-bold">Sign In To AI Personal Assistant</h2>
         <Button onClick={() => googleLogin()}>Sign in With Gmail</Button>
       </div>
     </div>

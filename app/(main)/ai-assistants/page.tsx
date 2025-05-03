@@ -70,6 +70,7 @@ function AIAssistants() {
     });
     setLoading(false);
     console.log(result);
+    router.replace('/workspace');
   }
 
   return (
@@ -77,7 +78,7 @@ function AIAssistants() {
       <div className='flex justify-between items-center'>
         <div>
         <BlurFade  delay={0.25 +1 * 0.05 } inView>
-          <h2 className='text-3xl font-bold'>Welcome to the World of AI Assistants 🤖</h2>
+          <h2 className='text-2xl md:text-3xl font-bold'>Welcome to the World of AI Assistants 🤖</h2>
           </BlurFade>
           <BlurFade  delay={0.25 +2 * 0.055} inView>
           <p className='text-xl mt-2'>Choose your AI Campanion to Simplify your daily tasks 😎</p>

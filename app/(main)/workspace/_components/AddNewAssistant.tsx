@@ -77,11 +77,11 @@ function AddNewAssistant({children}:any) {
   return (
     <Dialog>
        <DialogTrigger asChild>{children}</DialogTrigger>
-       <DialogContent>
+       <DialogContent className="max-h-[90vh] overflow-y-auto">
        <DialogHeader>
       <DialogTitle>Add New Assistant</DialogTitle>
       <DialogDescription asChild>
-         <div className='grid grid-cols-3 gap-5 mt-5'>
+         <div className='flex flex-col md:grid md:grid-cols-3 gap-5 mt-5'>
             <div className='mt-5 border-r p-3'>
                 <Button variant={'secondary'} size={'sm'} 
                  onClick={()=>setSelectedAssistant(DEFAULT_ASSISANT)}
@@ -99,8 +99,8 @@ function AddNewAssistant({children}:any) {
                     ))}
                 </div>
             </div>
-            <div className='col-span-2'>
-                <div className='flex gap-5'>
+            <div className='md:col-span-2 mt-5 md:mt-0'>
+                <div className='flex flex-col md:flex-row gap-5'>
                     {selectedAssistant && 
                      <AssistantAvatar selectedImage={(v:string)=>onHandleInputChange('image',v)}>
                         <Image src={selectedAssistant?.image}         
